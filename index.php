@@ -17,9 +17,11 @@ $censored = str_ireplace($badword, "***", $text);
 </head>
 
 <body>
-  <?php
-  echo $censored;
-  ?>
+  <?php echo $text; ?>
+  <p>Il mio testo misura: <?php echo strlen($text) ?></p>
+  <hr>
+  <?php echo $censored; ?>
+  <p>Il mio testo misura: <?php echo strlen($censored) ?></p>
 </body>
 
 </html>
